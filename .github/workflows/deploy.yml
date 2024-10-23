@@ -27,8 +27,10 @@ jobs:
         tags: nayandeepsen/coinport:latest  # Replace with your Docker Hub username and repository
 
     - name: Verify Pushed Image
-      run: nayandeepsen/coinport:latest  # Replace with your Docker Hub username and repository
-
+      run: |
+        sudo docker pull nayandeepsen/coinport:latest  
+        sudo docker images | grep "nayandeepsen/coinport"
+        
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
       with:

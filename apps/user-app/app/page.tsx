@@ -6,7 +6,7 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { CircleDollarSign } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import dashboard from "../assets/dashboard.png"; // Ensure this path is correct
+import dashboard from "../public/dashboard.png";
 import { signIn } from "next-auth/react";
 
 const LandingPage = () => {
@@ -47,7 +47,7 @@ const LandingPage = () => {
         <button
           className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 font-semibold rounded-full 
           shadow-lg transition duration-300"
-          onClick={() => signIn("Credentials",{callbackUrl: "/dashboard"})}
+          onClick={() => signIn("Credentials", { callbackUrl: "/dashboard" })}
         >
           Get Started
         </button>

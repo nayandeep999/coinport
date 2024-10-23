@@ -68,7 +68,7 @@ const LandingPage = () => {
           }
         >
           <Image
-            src={"/dashboard.png"}
+            src={"/dashboard.PNG"}
             alt="hero"
             height={720}
             width={1400}

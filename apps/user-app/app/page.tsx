@@ -6,7 +6,6 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { CircleDollarSign } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import dashboard from "../public/dashboard.png";
 import { signIn } from "next-auth/react";
 
 const LandingPage = () => {
@@ -69,7 +68,7 @@ const LandingPage = () => {
           }
         >
           <Image
-            src={dashboard} // Use the imported image here
+            src={"/dashboard.png"}
             alt="hero"
             height={720}
             width={1400}

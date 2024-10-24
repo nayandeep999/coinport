@@ -14,5 +14,8 @@
       "persistent": true
     }
   },
-  "globalEnv": ["NEXTAUTH_SECRET"]
+  "globalEnv": [
+    "NEXTAUTH_SECRET",
+    "DATABASE_URL"
+  ]
 }

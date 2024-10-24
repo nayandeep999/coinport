@@ -15,7 +15,6 @@
     }
   },
   "globalEnv": [
-    "NEXTAUTH_SECRET",
-    "DATABASE_URL"
+    "NEXTAUTH_SECRET"
   ]
 }

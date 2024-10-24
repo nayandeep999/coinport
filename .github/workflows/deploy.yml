@@ -43,4 +43,4 @@ jobs:
           sudo docker pull nayandeepsen/coinport:latest
           sudo docker stop web-app || true
           sudo docker rm web-app || true
-          sudo docker run -d --name web-app -p 3000:3000 nayandeepsen/coinport:latest
+          sudo docker run -d --name web-app --env-file /home/ubuntu/.env -p 3000:3000 nayandeepsen/coinport:latest

@@ -57,10 +57,10 @@ const LandingPage = () => {
         <ContainerScroll
           titleComponent={
             <>
-              <h1 className="text-4xl font-semibold text-gray-300">
+              <h1 className="text-4xl font-semibold text-gray-300 text-balance">
                 Experience the Future of Digital Wallets
                 <br />
-                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-balance">
                   with CoinPort!
                 </span>
               </h1>

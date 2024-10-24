@@ -7,6 +7,9 @@ COPY package.json package-lock.json turbo.json tsconfig.json ./
 COPY apps ./apps
 COPY packages ./packages
 
+# Copy the .env file
+COPY packages/db/.env /usr/src/app/packages/db/.env
+
 # Install dependencies
 RUN npm install --verbose
 # Can you add a script to the global package.json that does this?

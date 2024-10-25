@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/hdfcWebhook",
-      "dest": "src/index.ts",
+      "dest": "dist/index.js",
       "methods": ["POST"]
     }
   ]
